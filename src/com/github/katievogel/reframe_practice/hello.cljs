@@ -1,7 +1,11 @@
-(ns com.github.katievogel.reframe-practice.tabs_logic)
+(ns com.github.katievogel.reframe-practice.hello
+  (:require [reagent.core :as r]))
 
 ;hello tab just static text
-;paragraphs tab add and remove paragraph -- info goes to app-db
-;log needs username and password entry and login button function -- info goes to app-db
-;fun people needs name, reason, add person button, populates card on dom, default value for no people
-;cards on fun people need some template text and removal button
+
+(defn hello-react-text []
+  [:div
+   [:h1 "Hello React!"]
+   [:p "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes."]
+   [:p "Declarative views make your code more predictable and easier to debug."]])
+
